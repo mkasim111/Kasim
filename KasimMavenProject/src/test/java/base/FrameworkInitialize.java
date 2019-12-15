@@ -18,6 +18,7 @@ public class FrameworkInitialize extends Base {
 					+ "\\src\\test\\resources\\drivers\\chromedriver_win32\\chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			driver = new ChromeDriver(chromeOptions);
+			
 			break;
 		case Firefox:
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")

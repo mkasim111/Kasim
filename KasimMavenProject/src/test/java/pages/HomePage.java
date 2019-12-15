@@ -14,7 +14,7 @@ public class HomePage extends BasePage{
 	
 	public ShoppingCartPage clickBuyNowButton() {
 		buyNowButton.click();
-		return new ShoppingCartPage();
+		return GetInstance(ShoppingCartPage.class);
 	}
 
 }

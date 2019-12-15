@@ -9,6 +9,7 @@ import utilities.PropertyManager;
 public class Browser extends Base{
 	public BrowserTypes type;
 	private WebDriver driver;
+
 	
 	public Browser(WebDriver driver) {
 		this.driver = driver;
@@ -27,4 +28,5 @@ public class Browser extends Base{
 	public void ImplicitWait() {
 		driver.manage().timeouts().implicitlyWait( Integer.parseInt(PropertyManager.getInstance().getImplicitTime()), TimeUnit.SECONDS);
 	}
+	
 }

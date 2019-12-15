@@ -2,15 +2,19 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BasePage;
+import base.DriverContext;
 
 public class ShoppingCartPage extends BasePage{
+	private WebDriverWait wait = new WebDriverWait(DriverContext.driver, 10);
 	public ShoppingCartPage() {
 	}
 
 	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'Name')]//following-sibling::td/input")
-	private WebElement nameTextField;
+	public WebElement nameTextField;
 
 	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'Email')]//following-sibling::td/input")
 	private WebElement emailTextField;
@@ -21,16 +25,20 @@ public class ShoppingCartPage extends BasePage{
 	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'City')]//following-sibling::td/input")
 	private WebElement cityTextField;
 	
-	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'Address')]//following-sibling::td/input")
+	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'Address')]//following-sibling::td/textarea")
 	private WebElement addressTextField;
 	
 	@FindBy(xpath = "//*[@class='input-label' and contains(text(),'Postal Code')]//following-sibling::td/input")
 	private WebElement postTextField;
 	
 	@FindBy(xpath="//div[contains(text(),'CHECKOUT')]") private WebElement checkOutButton;
+	@FindBy(xpath="(//*[@class='amount'])[2]") private WebElement totalAmount;
+	
+	
 	
 	
 	public ShoppingCartPage enterName(String name) {
+		wait.until(ExpectedConditions.visibilityOf(nameTextField));
 		nameTextField.clear();
 		nameTextField.sendKeys(name);
 		return this;
@@ -67,9 +75,11 @@ public class ShoppingCartPage extends BasePage{
 	
 	public OrderSummaryPage clickCheckoutButton() {
 		checkOutButton.click();
-		return new OrderSummaryPage();
+		return GetInstance(OrderSummaryPage.class);
 	}
 
-	
+	public String getTotalAmountForPillow() {
+		return totalAmount.getText();
+	}
 
 }

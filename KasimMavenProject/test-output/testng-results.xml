@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13278" started-at="2019-12-15T09:28:10Z" finished-at="2019-12-15T09:28:24Z">
+  <suite name="Suite" duration-ms="27800" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:28Z">
     <groups>
     </groups>
-    <test name="CCPaymentTest Success" duration-ms="13278" started-at="2019-12-15T09:28:10Z" finished-at="2019-12-15T09:28:24Z">
+    <test name="CCPaymentTest Success" duration-ms="27800" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:28Z">
       <class name="tests.BuyProductUsingCCPaymentTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5700d6b1]" name="setUp" is-config="true" duration-ms="7890" started-at="2019-12-15T09:28:10Z" finished-at="2019-12-15T09:28:18Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="setUp" is-config="true" duration-ms="12570" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:13Z">
           <params>
             <param index="0">
               <value>
@@ -18,44 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="buyNowProductWithCCPaymentTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5700d6b1]" name="buyNowProductWithCCPaymentTest" duration-ms="4711" started-at="2019-12-15T09:28:18Z" finished-at="2019-12-15T09:28:23Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pages.ShoppingCartPage.enterName(ShoppingCartPage.java:34)
-at tests.BuyProductUsingCCPaymentTest.buyNowProductWithCCPaymentTest(BuyProductUsingCCPaymentTest.java:60)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="buyNowProductWithCCPaymentFailedTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="buyNowProductWithCCPaymentFailedTest" duration-ms="14453" started-at="2019-12-15T15:09:13Z" finished-at="2019-12-15T15:09:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buyNowProductWithCCPaymentTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="643" started-at="2019-12-15T09:28:23Z" finished-at="2019-12-15T09:28:24Z">
+        </test-method> <!-- buyNowProductWithCCPaymentFailedTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="tearDown" is-config="true" duration-ms="744" started-at="2019-12-15T15:09:27Z" finished-at="2019-12-15T15:09:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
