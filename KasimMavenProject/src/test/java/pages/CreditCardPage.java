@@ -3,7 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CreditCardPage {
+import base.BasePage;
+
+public class CreditCardPage extends BasePage{
 	
 	public CreditCardPage() {}
 	

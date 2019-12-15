@@ -3,7 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SelectPaymentPage {
+import base.BasePage;
+
+public class SelectPaymentPage extends BasePage{
 	
 	public SelectPaymentPage() {
 	}

@@ -3,7 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ShoppingCartPage {
+import base.BasePage;
+
+public class ShoppingCartPage extends BasePage{
 	public ShoppingCartPage() {
 	}
 

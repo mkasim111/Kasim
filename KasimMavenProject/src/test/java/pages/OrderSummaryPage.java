@@ -3,7 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class OrderSummaryPage {
+import base.BasePage;
+
+public class OrderSummaryPage extends BasePage{
 
 	public OrderSummaryPage() {
 	}
