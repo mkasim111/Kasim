@@ -15,7 +15,7 @@ public class OrderSummaryPage extends BasePage{
 
 	@FindBy(xpath = "//*[@id='app']/div/div[1]") private WebElement continueButton;
 
-	public SelectPaymentPage clickBuyNowButton() {
+	public SelectPaymentPage clickContinueButton() {
 		try {
 		wait.until(ExpectedConditions.visibilityOf(continueButton));
 		continueButton.click();

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27800" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:28Z">
+  <suite name="Suite" duration-ms="63831" started-at="2019-12-15T17:07:32Z" finished-at="2019-12-15T17:08:36Z">
     <groups>
     </groups>
-    <test name="CCPaymentTest Success" duration-ms="27800" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:28Z">
+    <test name="CCPaymentTest Success" duration-ms="36672" started-at="2019-12-15T17:07:32Z" finished-at="2019-12-15T17:08:09Z">
       <class name="tests.BuyProductUsingCCPaymentTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="setUp" is-config="true" duration-ms="12570" started-at="2019-12-15T15:09:00Z" finished-at="2019-12-15T15:09:13Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@55b699ef]" name="setUp" is-config="true" duration-ms="12247" started-at="2019-12-15T17:07:32Z" finished-at="2019-12-15T17:07:44Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="buyNowProductWithCCPaymentFailedTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="buyNowProductWithCCPaymentFailedTest" duration-ms="14453" started-at="2019-12-15T15:09:13Z" finished-at="2019-12-15T15:09:27Z">
+        <test-method status="PASS" signature="buyNowProductWithCCPaymentTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@55b699ef]" name="buyNowProductWithCCPaymentTest" duration-ms="22556" started-at="2019-12-15T17:07:44Z" finished-at="2019-12-15T17:08:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buyNowProductWithCCPaymentFailedTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@5f2108b5]" name="tearDown" is-config="true" duration-ms="744" started-at="2019-12-15T15:09:27Z" finished-at="2019-12-15T15:09:28Z">
+        </test-method> <!-- buyNowProductWithCCPaymentTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@55b699ef]" name="getResult" is-config="true" duration-ms="499" started-at="2019-12-15T17:08:07Z" finished-at="2019-12-15T17:08:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyNowProductWithCCPaymentTest status=SUCCESS method=BuyProductUsingCCPaymentTest.buyNowProductWithCCPaymentTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@55b699ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@55b699ef]" name="tearDown" is-config="true" duration-ms="1335" started-at="2019-12-15T17:08:07Z" finished-at="2019-12-15T17:08:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.BuyProductUsingCCPaymentTest -->
     </test> <!-- CCPaymentTest Success -->
+    <test name="CCPaymentTest Failure" duration-ms="27139" started-at="2019-12-15T17:08:09Z" finished-at="2019-12-15T17:08:36Z">
+      <class name="tests.BuyProductUsingCCPaymentTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@7b98f307]" name="setUp" is-config="true" duration-ms="11552" started-at="2019-12-15T17:08:09Z" finished-at="2019-12-15T17:08:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="buyNowProductWithCCPaymentFailedTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@7b98f307]" name="buyNowProductWithCCPaymentFailedTest" duration-ms="14094" started-at="2019-12-15T17:08:20Z" finished-at="2019-12-15T17:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyNowProductWithCCPaymentFailedTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.BuyProductUsingCCPaymentTest@7b98f307]" name="getResult" is-config="true" duration-ms="542" started-at="2019-12-15T17:08:34Z" finished-at="2019-12-15T17:08:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buyNowProductWithCCPaymentFailedTest status=SUCCESS method=BuyProductUsingCCPaymentTest.buyNowProductWithCCPaymentFailedTest()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@7b98f307] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.BuyProductUsingCCPaymentTest@7b98f307]" name="tearDown" is-config="true" duration-ms="951" started-at="2019-12-15T17:08:35Z" finished-at="2019-12-15T17:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BuyProductUsingCCPaymentTest -->
+    </test> <!-- CCPaymentTest Failure -->
   </suite> <!-- Suite -->
 </testng-results>

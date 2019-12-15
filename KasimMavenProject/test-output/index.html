@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.BuyProductUsingCCPaymentTest" hash-for-method="buyNowProductWithCCPaymentFailedTest">buyNowProductWithCCPaymentFailedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.BuyProductUsingCCPaymentTest" hash-for-method="buyNowProductWithCCPaymentTest">buyNowProductWithCCPaymentTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,6 +135,13 @@
                   <span class="method-name">buyNowProductWithCCPaymentFailedTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyNowProductWithCCPaymentTest">
+                  </a> <!-- buyNowProductWithCCPaymentTest -->
+                  <span class="method-name">buyNowProductWithCCPaymentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -142,8 +154,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;CCPaymentTest Success&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BuyProductUsingCCPaymentTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;buyNowProductWithCCPaymentTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.BuyProductUsingCCPaymentTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CCPaymentTest Success --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CCPaymentTest Failure&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.BuyProductUsingCCPaymentTest&quot;&gt;
         &lt;methods&gt;
@@ -151,7 +173,7 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.BuyProductUsingCCPaymentTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CCPaymentTest Success --&gt;
+  &lt;/test&gt; &lt;!-- CCPaymentTest Failure --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,6 +186,9 @@
             <ul>
               <li>
                 <span class="test-name">CCPaymentTest Success (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CCPaymentTest Failure (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +214,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'buyNowProductWithCCPaymentFailedTest')
+data.setCell(0, 1, 'buyNowProductWithCCPaymentTest')
 data.setCell(0, 2, 'tests.BuyProductUsingCCPaymentTest')
-data.setCell(0, 3, 14453);
+data.setCell(0, 3, 22556);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'buyNowProductWithCCPaymentFailedTest')
+data.setCell(1, 2, 'tests.BuyProductUsingCCPaymentTest')
+data.setCell(1, 3, 14094);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -213,12 +242,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.BuyProductUsingCCPaymentTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">buyNowProductWithCCPaymentFailedTest</span>
+                <br/>
                 <span class="ignored-method-name">buyNowProductWithCCPaymentTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -237,12 +268,32 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">buyNowProductWithCCPaymentFailedTest</span>
-                <span class="method-start">12593 ms</span>
+                <span class="method-name">buyNowProductWithCCPaymentTest</span>
+                <span class="method-start">12271 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=buyNowProductWithCCPaymentTest status=SUCCESS method=BuyProductUsingCCPaymentTest.b...)</span>
+                <span class="method-start">34835 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27053 ms</span>
+                <span class="method-start">35334 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">36689 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">buyNowProductWithCCPaymentFailedTest</span>
+                <span class="method-start">48241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=buyNowProductWithCCPaymentFailedTest status=SUCCESS method=BuyProductUsingCCPayment...)</span>
+                <span class="method-start">62335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62877 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

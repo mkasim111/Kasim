@@ -21,7 +21,7 @@ public class FrameworkInitialize extends Base {
 			
 			break;
 		case Firefox:
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
 					+ "\\src\\test\\resources\\drivers\\geckodriver-v0.26.0-win64\\geckodriver.exe");
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			driver = new FirefoxDriver(firefoxOptions);
